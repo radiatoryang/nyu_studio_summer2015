@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: stickFigureEagle.ma
-//Last modified: Thu, Jul 16, 2015 03:06:10 PM
+//Last modified: Thu, Jul 16, 2015 04:18:55 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -9,14 +9,15 @@ fileInfo "product" "Maya 2015";
 fileInfo "version" "2015";
 fileInfo "cutIdentifier" "201405190330-916664";
 fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n";
+fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.037044668491394 9.9700271853332758 17.835239492898861 ;
-	setAttr ".r" -type "double3" -26.738352729614242 43.399999999969388 -2.1887321486252036e-015 ;
+	setAttr ".t" -type "double3" 11.063775969186864 7.61473732239428 8.680329954509542 ;
+	setAttr ".r" -type "double3" -33.938352729616078 56.599999999970109 2.8888882479066517e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 27.56812546604537;
+	setAttr ".coi" 18.529217386934132;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -68,7 +69,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5625 0.37500002980232239 ;
+	setAttr ".pv" -type "double2" 0.5625 0.25 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 299 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.375 0 0.4375 0 0.5 0 0.5625
@@ -136,11 +137,12 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 12 ".pt";
+	setAttr -s 15 ".pt";
 	setAttr ".pt[96]" -type "float3" -5.9604645e-008 0 0 ;
 	setAttr ".pt[97]" -type "float3" -5.9604645e-008 0 0 ;
 	setAttr ".pt[102]" -type "float3" -5.9604645e-008 0 0 ;
 	setAttr ".pt[103]" -type "float3" -5.9604645e-008 0 0 ;
+	setAttr ".pt[132]" -type "float3" 0 -2.7755576e-017 0 ;
 	setAttr ".pt[198]" -type "float3" 7.0536346 0 0 ;
 	setAttr ".pt[199]" -type "float3" 7.0536346 0 0 ;
 	setAttr ".pt[200]" -type "float3" 7.0536346 0 0 ;
